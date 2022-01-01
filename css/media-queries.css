@@ -51,7 +51,8 @@
 
     /* Hero */
     .hero {
-        background-image: url("../images/desktop/image-hero.jpg");
+        height: 80vh;
+        background-image: linear-gradient(#00000087, #00000087),url("../images/desktop/image-hero.jpg");
         place-items: start;
         align-items: center;
     }
