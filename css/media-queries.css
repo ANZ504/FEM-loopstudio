@@ -1,0 +1,180 @@
+/* Tablet */
+@media (max-width: 768px) and (min-width: 525px) {
+    .title-container {
+        width: 80%;
+    }
+    .hero__title {
+        font-size: 7.0rem;
+    }
+    .info__desc {
+        width: 80%;
+    }
+}
+/* Desktop */
+@media (max-width: 2500px) and (min-width: 1200px) {
+    /* Nav */
+    .nav__desktop {
+        display: flex;
+        width: 400px;
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .nav__desktop li {
+        display: grid;
+        place-items: end center;
+    }
+    .nav__desktop li a{
+
+        font-family: var(--Alata);
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: var(--white);
+        transition: all 1s ease;
+
+
+    }
+    .nav__desktop li::after {
+        display: flex;
+        width: 25px;
+        height: 6px;
+        content: '';
+        justify-content: center;
+        align-items: flex-end;
+        border-bottom: 3px solid transparent;
+        transition: all 1s ease;
+       
+    }
+    .nav__desktop li:hover::after {
+        border-bottom: 3px solid var(--white);
+    }
+
+    /* Hero */
+    .hero {
+        background-image: url("../images/desktop/image-hero.jpg");
+        place-items: start;
+        align-items: center;
+    }
+    .title-container {
+        width: 35%;
+        margin-left: 70px;
+    }
+    .hero__title {
+        font-size: 6.0rem;
+    }
+    /* Description */
+    .info {
+        margin: 150px 0;
+    }
+    .info__container {
+        display: grid;
+        width: 80vw;
+        grid-template-columns: 2fr 1fr;
+        background-color: var(--white);
+        position: relative;
+    }
+    .info__container img {
+        width: 100%;
+        position: relative;
+    }
+    .info__container div {
+        display: flex;
+        width: 40%;
+        height: 70%;
+        flex-direction: column;
+        
+        padding: 50px;
+        position: absolute;
+        background-color: var(--white);
+        top: 50%;
+        left: 50%;
+        
+    }
+    .info__container div h2,
+    .info__container div p{
+        text-align: start;
+    }
+    .info__img {
+        content: url("../images/desktop/image-interactive.jpg");
+        width: 500px;
+    }
+    /* Our Creations */
+    .ourCreation {
+        justify-content: center;
+    }
+    .ourCreation__title {
+        text-align: start;
+        
+    }
+    .cards__container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4,300px);
+        grid-template-rows: repeat(2,1fr);
+        place-items: start;
+        row-gap: 20px;
+    }
+    .card {
+        width: 256px;
+        height: 450px;
+    }
+    .card__img {
+        width: 100%;
+        height: 100%;
+    }
+    .card__img.img-1{
+        content: url("../images/desktop/image-deep-earth.jpg");
+    }
+    .card__img.img-2{
+        content: url("../images/desktop/image-night-arcade.jpg");
+    }
+    .card__img.img-3{
+        content: url("../images/desktop/image-soccer-team.jpg");
+    }
+    .card__img.img-4{
+        content: url("../images/desktop/image-grid.jpg");
+    }
+    .card__img.img-5{
+        content: url("../images/desktop/image-from-above.jpg");
+    }
+    .card__img.img-6{
+        content: url("../images/desktop/image-pocket-borealis.jpg");
+    }
+    .card__img.img-7{
+        content: url("../images/desktop/image-curiosity.jpg");
+    }
+    .card__img.img-8{
+        content: url("../images/desktop/image-fisheye.jpg");
+    }
+    /* Menu Mobile */
+    #btnHamburgerOpen {
+        display: none;
+    }
+    /* Footer */
+    .footer__container {
+        height: 200px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__links-container {
+        margin-top: 20px;
+    }
+    .footer__links-container ul {
+        flex-direction: row;
+        height: auto;
+        
+    }
+    .footer__links-container ul li {
+        margin-right: 10px;
+    }
+    .footer__icons-container {
+        width: 220px;
+        justify-content: end;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+    .footer__icons-container a i {
+        margin-left: 10px;
+    }
+}
+

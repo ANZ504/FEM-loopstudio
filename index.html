@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Loopstudios landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!--   <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
+    rel="stylesheet">
+  <!-- JS -->
+  <script defer src="https://kit.fontawesome.com/467a92e857.js" crossorigin="anonymous"></script>
+  <!-- LINK CSS -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/index-style.css">
+  <link rel="stylesheet" href="./css/media-queries.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <img class="nav__logo" src="./images/logo.svg" alt="Logo Loopstudios">
+      <ul class="nav__desktop">
+        <li><a href="#">About</a> </li>
+        <li><a href="#">Careers</a> </li>
+        <li><a href="#">Events</a> </li>
+        <li><a href="#">Products</a> </li>
+        <li><a href="#">Support</a> </li>
+      </ul>
+      <a id="btnHamburgerOpen">
+        <!--  <img class="nav__iconMenu" src="./images/icon-hamburger.svg" alt="Icon Hamburger"> --></a>
+    </nav>
+  </header>
+  <div id="mobileMenu" class="header__menu">
+    <div class="menu__container">
+      <a href="#hero">About</a>
+      <a href="#">Careers</a>
+      <a href="#">Events</a>
+      <a href="#products">Products</a>
+      <a href="#">Support</a>
+    </div>
+
+  </div>
+  <!-- Main Hero -->
+  <main class="main">
+    <section class="hero" id="hero">
+      <div class="title-container">
+        <h1 class="hero__title">Immersive experiences that deliver</h1>
+      </div>
+    </section>
+    <!-- Main Description -->
+    <section class="info">
+      <article class="info__container">
+        <img class="info__img" src="./images/mobile/image-interactive.jpg" alt="">
+        <div>
+          <h2 class="info__title">The leader in interactive VR</h2>
+          <p class="info__desc"> Founded in 2011, Loopstudios has been producing world-class virtual reality
+            projects for some of the best companies around the globe. Our award-winning
+            creations have transformed businesses through digital experiences that bind
+            to their brand.</p>
+        </div>
+      </article>
+    </section>
+    <!-- Main OUR CREATIONS -->
+
+    <section class="ourCreation" id="products">
+      <h2 class="ourCreation__title">Our creations</h2>
+      <div class="cards__container">
+        <div class="card">
+          <img src="./images/mobile/image-deep-earth.jpg" id="img1" alt="Image DEEP EARTH" class="card__img img-1">
+          <h3 class="card__title">DEEP <br> EARTH</h3>
+        </div>
+        <div class="card">
+          <img src="./images/mobile/image-night-arcade.jpg" alt="Image NIGHT ARCADE" class="card__img img-2">
+          <h3 class="card__title">NIGHT <br> ARCADE</h3>
+        </div>
+        <div class="card">
+          <img src="./images/mobile/image-soccer-team.jpg" alt="Image Soccer Team" class="card__img img-3">
+          <h3 class="card__title">SOCCER <br> TEAM VR</h3>
+        </div>
+        <div class="card">
+          <img src="./images/mobile/image-grid.jpg" alt="Image The Grid" class="card__img img-4">
+          <h3 class="card__title">THE <br> GRID</h3>
+        </div>
+        <div class="card">
+          <img src="./images/mobile/image-from-above.jpg" alt="Image From Above" class="card__img img-5">
+          <h3 class="card__title">FROM UP <br> ABOVE VR</h3>
+        </div>
+        <div class="card">
+          <img src="./images/mobile/image-pocket-borealis.jpg" alt="Image POCKET BOREALIS" class="card__img img-6">
+          <h3 class="card__title">POCKET <br> BOREALIS</h3>
+        </div>
+        <div class="card">
+          <img src="./images/mobile/image-curiosity.jpg" alt="Image The CURIOSITY" class="card__img img-7">
+          <h3 class="card__title">THE <br> CURIOSITY</h3>
+        </div>
+        <div class="card">
+          <img src="./images/mobile/image-fisheye.jpg" alt="IMAGE MAKE IT FISHEYE" class="card__img img-8">
+          <h3 class="card__title">MAKE IT <br> FISHEYE</h3>
+        </div>
+      </div>
+      <a class="ourCreation__button" href="#">SEE ALL</a>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div>
+        <figure>
+          <img class="footer__logo" src="./images/logo.svg" alt="Logo Loopstudios">
+        </figure>
+        <div class="footer__links-container">
+          <ul>
+            <li><a href="#">About</a> </li>
+            <li><a href="#">Careers</a> </li>
+            <li><a href="#">Events</a> </li>
+            <li><a href="#">Products</a> </li>
+            <li><a href="#">Support</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__2">
+        <div class="footer__icons-container">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/solo_anz/"><i class="fab fa-instagram-square"></i></a>
+          <a href="https://github.com/ANZ504"><i class="fab fa-github-square"></i></a>
+          <a href="https://www.linkedin.com/in/technicalanz/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <p class="footer__copy"> © 2021 Loopstudios. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+  <!-- 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script defer type="text/javascript" src="./app/index.js"></script>
+
+</body>
+
+</html>
